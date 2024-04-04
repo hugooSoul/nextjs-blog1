@@ -35,7 +35,7 @@ const Post = async ({ params }) => {
 
   return (
     <div className={styles.container}>
-      {!post.img && (
+      {post.img && (
         <div className={styles.imgContainer}>
           <Image src={post.img} alt="" fill className={styles.img} />
         </div>
